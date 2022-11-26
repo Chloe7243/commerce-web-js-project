@@ -1,7 +1,5 @@
 "use strict";
 const contentBody = document.querySelector(".body-area");
-let slides = document.querySelectorAll(".content");
-const slidesContainer = document.querySelector(".main-content");
 const fowButton = document.querySelector(".fa-arrow-right");
 const bkButton = document.querySelector(".fa-arrow-left");
 const loginState = document.querySelector(".login");
@@ -17,6 +15,8 @@ const allPickedItems = document.querySelector(".all-selected-items");
 const emptyCartHtml = document.querySelector(".empty-cart");
 
 // console.log(itemQuantity.childNodes);
+const slidesContainer = document.querySelector(".main-content");
+let slides = document.querySelectorAll(".content");
 
 const widthMov = slides[0].getBoundingClientRect().width;
 const gapBtwn = getComputedStyle(slidesContainer).rowGap;
